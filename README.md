@@ -1,37 +1,34 @@
-# Fraud Detection System
+# Fraud Detection App
 
-A Python-based fraud detection application using machine learning (Random Forest classifier) for detecting fraudulent credit card transactions. This project includes a trained model, a Tkinter GUI app for prediction, and exploratory data analysis.
+A desktop application to detect fraudulent credit card transactions using a Random Forest classifier trained on the [Credit Card Fraud Detection dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
+
+---
+
+## Dataset
+
+This project uses the publicly available **Credit Card Fraud Detection** dataset from Kaggle:
+
+[https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
+**Note:** You need to download `creditcard.csv` from Kaggle and place it in the project root directory before training or running the app.
 
 ---
 
 ## Features
 
-- Train a Random Forest model on the credit card fraud dataset
-- Evaluate model performance with accuracy, precision, recall, F1-score, MCC, and confusion matrix
-- GUI application with Tkinter to:
-  - Predict fraud on single transaction input
-  - Upload CSV files and detect frauds in bulk
-  - Visualize fraud data with scatter plot (Time vs Amount)
-  - Download fraud transaction data as CSV
-- Clean and modular Python codebase
-
----
-
-## Files in this Repository
-
-- `fraudmodel.py` — Core model training, evaluation, saving model & metrics  
-- `fraudapp.py` — Tkinter GUI for fraud detection  
-- `creditcard.ipynb` — Data exploration, preprocessing, and model experimentation (Jupyter notebook)  
-- `requirements.txt` — Python dependencies  
-- `.gitignore` — Files and folders to ignore in Git  
-- `README.md` — Project overview and instructions  
+- Train a Random Forest model to detect fraud.
+- Predict fraud on single transactions from user input.
+- Upload CSV files for batch fraud detection.
+- Visualize fraudulent transactions with scatter plots.
+- Download detected fraud cases as CSV.
+- User-friendly GUI built with Tkinter and ttkbootstrap.
 
 ---
 
 ## Installation
 
-1. Clone the repo:
+1. Clone the repository:
 
-```bash
-git clone https://github.com/yourusername/fraud-detection.git
-cd fraud-detection
+   ```bash
+   git clone https://github.com/yourusername/fraud-detection-app.git
+   cd fraud-detection-app
